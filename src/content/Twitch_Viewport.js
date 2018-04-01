@@ -26,19 +26,8 @@ export default class Twitch_Viewport {
         const PARENT = this.viewport.el.parentElement;
         const OVERLAY = document.createElement('div');
 
-        Object.assign(OVERLAY.style, {
-            backgroundColor: '',
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            left: '0',
-            top: '0',
-            zIndex: '255555555555',
-            backgroundColor: 'rgba(0, 0, 0, 0.0)',
-            pointerEvents: 'none'
-        });
-
         OVERLAY.id = 'nn-overlay';
+        OVERLAY.className = 'nn-overlay';
         
         PARENT.appendChild(OVERLAY);
 
